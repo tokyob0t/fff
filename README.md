@@ -351,6 +351,8 @@ require('fff').setup({
     prompt_position = 'bottom',   -- or 'top'
     preview_position = 'right',   -- 'left' | 'right' | 'top' | 'bottom'
     preview_size = 0.5,
+    -- Alignment of `title` inside the picker border: 'center' | 'left' | 'right'
+    title_pos = 'center',
     -- Border style for the picker windows. Leave unset (nil) to follow the
     -- global `vim.o.winborder`; set it to override fff's borders independently.
     border = nil, -- 'single' | 'double' | 'rounded' | 'solid' | 'shadow' | 'none'

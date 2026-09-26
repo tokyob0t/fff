@@ -10,6 +10,7 @@ local M = {}
 --- @field show_scrollbar boolean
 --- @field path_shorten_strategy string
 --- @field show_path_first boolean
+--- @field title_pos? 'left'|'center'|'right' Alignment of the picker title within the border
 --- @field border? 'single'|'double'|'rounded'|'solid'|'shadow'|'none'|table<string[],string[]> Border preset; falls back to `vim.o.winborder` when nil
 
 --- @class FffPreviewConfig
@@ -267,6 +268,8 @@ local function init()
       prompt_position = 'bottom', -- or 'top'
       preview_position = 'right', -- or 'left', 'right', 'top', 'bottom'
       preview_size = 0.5,
+      -- Alignment of the picker title inside the border: 'center', 'left' or 'right'
+      title_pos = 'center',
       -- Border style for the picker windows: 'single', 'double', 'rounded',
       -- 'solid', 'shadow' or 'none'. Leave unset (nil) to follow the global
       -- `vim.o.winborder` setting.
